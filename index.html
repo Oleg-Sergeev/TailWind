@@ -5,8 +5,199 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Попутный ветер</title>
+  <link rel="stylesheet" type="text/css" href="/styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/slider.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/reseter.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+  <script defer src="/slider.js"></script>
 </head>
+
 <body>
+  <header>
+    <div class="header-container">
+      <nav class="nav-topbar">
+        <div class="nav-topbar-logo">
+          <a href="#">
+            <img src="/images/logo.png" width="128" height="128" alt="лого"/>
+          </a>
+        </div>
   
+        <div class="nav-topbar-buttons">
+          <ul class="nav-topbar-ul">
+            <li>
+              <a class="nav-topbar-link" href="#about">О НАС</a>
+            </li>
+            <li>
+              <a class="nav-topbar-link" href="#products">ПРОДУКТЫ</a>
+            </li>
+            <li>
+              <a class="nav-topbar-link" href="#partners">ПАРТНЕРЫ</a>
+            </li>
+            <li>
+              <a class="nav-topbar-link" href="#contacts">КОНТАКТЫ</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <div class="header-content-container">
+        <p class="header-content-subtitle">ПРОЕКТ</p>
+        <h1 class="title">ПОПУТНЫЙ ВЕТЕР</h1>
+        <p class="header-content-description">
+          Мы верим, что наши портативные ветряные турбины являются лучшим выбором для тех, 
+          кто хочет быть экологически ответственным и независимым от традиционных источников энергии. 
+          Будьте частью нашей миссии и присоединяйтесь к нам сегодня!
+        </p>
+  
+        <button type="button" class="btn-book">ЗАКАЗАТЬ</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-container">
+    <div class="content-block">
+      <h2 class="subtitle">Портативный ветряк</h2>
+      <h3 class="article">Характеристики</h3>
+
+      <div class="content-block-container">
+        <div class="content">
+          <h4 class="content-blades-type">СО СКЛАДНЫМИ ЛОПАСТЯМИ</h4>
+
+          <img class="content-photo" src="/images/foldingBlades.jpg" alt="Складные лопасти"/>
+          
+          <div class="content-param-container">
+            <p class="content-param-name">Скорость:</p>
+            <p class="content-param-value">15м/с</p>
+          </div>
+          
+          <div class="content-param-container">
+            <p class="content-param-name">Прочность</p>
+            <p class="content-param-value">Средняя</p>
+          </div>
+          
+          <div class="content-param-container">
+            <p class="content-param-name">Генерируемая мощность</p>
+            <p class="content-param-value">3-10Вт</p>
+          </div>
+        </div>
+
+        <div class="sep-v"></div>
+
+        <div class="content">
+          <h4 class="content-blades-type">С НЕСКЛАДНЫМИ ЛОПАСТЯМИ</h4>
+
+          <img class="content-photo" src="/images/notFoldingBlades.jpg" alt="Складные лопасти"/>
+          
+          <div class="content-param-container">
+            <p class="content-param-name">Скорость:</p>
+            <p class="content-param-value">18м/с</p>
+          </div>
+          
+          <div class="content-param-container">
+            <p class="content-param-name">Прочность</p>
+            <p class="content-param-value">Наивысшая</p>
+          </div>
+          
+          <div class="content-param-container">
+            <p class="content-param-name">Генерируемая мощность</p>
+            <p class="content-param-value">5-15Вт</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sep-h"></div>
+
+    <div class="content-block">
+      <h2 class="subtitle">Портативный ветряк</h2>
+
+      <div class="content-block-container">
+        <div class="content">
+          <div>
+            <h4 class="content-blades-type">ДЛЯ СБОРКИ</h4>
+
+            <p class="content-description">
+              Набор с расходными материалами,  полной инструкцией и предоставляемой электроникой
+            </p>
+          </div>
+
+          <img class="content-photo" src="/images/forAssemle.jpg" alt="Складные лопасти"/>
+        </div>
+
+        <div style="width: 1px;"></div>
+
+        <div class="content">
+          <div>
+            <h4 class="content-blades-type">ДЛЯ ПЕЧАТИ</h4>
+
+            <p class="content-description">
+              Набор с готовыми комплектующими,  полной инструкцией и предоставляемой электроникой
+            </p>
+          </div>
+
+          <img class="content-photo" src="/images/forPrint.jpg" alt="Складные лопасти"/>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="sep-h"></div>
+
+    <div class="content-block" style="gap: 30px">
+      <h2 class="subtitle">ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h2>
+      
+      <p class="content-description" style="max-width: 40%;">
+        Дополнительная комплектация, которую можно добавить в комплект за дополнительную плату
+      </p>
+      
+      <h3 class="subarticle product-name">ШТАТИВ ДЛЯ ВЕТРЕНОЙ ТУРБИНЫ</h3>
+
+      <div class="slider" data-pos="0">
+        <div class="slider__slides">
+          <div class="slider__slide"></div>
+          <div class="slider__slide"></div>
+          <div class="slider__slide"></div>
+          <div class="slider__slide"></div>
+        </div>
+
+        <div class="slider__arrows">
+          <button id="slider__btn-next" class="slider__arrow" data-offset="-1">&#10094;</button>
+          <button id="slider__btn-prev" class="slider__arrow" data-offset="1">&#10095;</button>
+        </div>
+
+        <div class="slider__dots">
+          <a class="slider__indicator"></a>
+          <a class="slider__dot" data-pos="0"></a>
+          <a class="slider__dot" data-pos="1"></a>
+          <a class="slider__dot" data-pos="2"></a>
+          <a class="slider__dot" data-pos="3"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+<footer>
+  <div class="footer-container">
+    <div class="footer-description">
+
+    </div>
+
+    <div class="footer-info-container">
+      <div class="footer-info-partners">
+
+      </div>
+
+      <div class="footer-info-contacts">
+
+      </div>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
