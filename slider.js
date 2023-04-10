@@ -5,11 +5,12 @@ let arrowElems = sliderElem.querySelectorAll('.slider__arrow');
 let indicatorElem = sliderElem.querySelector('.slider__indicator');
 
 let autoplayInterval = setInterval(autoPlay, 7000);
+let autoplayEnabled = true;
 
 dotElems.forEach(dotElem => {
 
 	dotElem.addEventListener('click', _ => {
-		pauseAutoplay();
+		restartAutoplay();
 
 		let newPos = parseInt(dotElem.getAttribute('data-pos'));
 
@@ -19,7 +20,7 @@ dotElems.forEach(dotElem => {
 
 arrowElems.forEach(arrowElem => {
 	arrowElem.addEventListener('click', _ => {
-		pauseAutoplay();
+		restartAutoplay();
 
 		let dataOffset = parseInt(arrowElem.getAttribute('data-offset'));
 
@@ -49,10 +50,18 @@ function autoPlay() {
 	moveTo(mod(getCurrentPos() + 1, dots))
 }
 
-function pauseAutoplay() {
+function restartAutoplay() {
+	if (!autoplayEnabled) {
+		return;
+	}
+
 	clearInterval(autoplayInterval);
 
-	setTimeout(() => autoplayInterval = setInterval(autoPlay, 7000), 10000);
+	autoplayEnabled = false;
+	setTimeout(() => {
+		autoplayInterval = setInterval(autoPlay, 7000), 10000;
+		autoplayEnabled = true;
+	})
 }
 
 function mod(x, m) {
