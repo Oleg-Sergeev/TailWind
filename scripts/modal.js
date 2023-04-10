@@ -19,6 +19,13 @@ modalClose.addEventListener("click", e => {
 modalSubmit.addEventListener("click", e => {
     e.preventDefault();
 
+    var form = document.forms[0];
+    var isValid = form.checkValidity();
+    form.reportValidity();
+    if (!isValid) {
+        return;
+    }
+
     modal.classList.remove("modal-active");
     modalOrder.classList.add("modal-active");
 })
