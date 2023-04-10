@@ -214,7 +214,7 @@ body {
     gap: 100px;
     text-align: center;
     padding: 50px;
-    height: 800px;
+    min-height: 800px;
     background: url("../images/bg_footer_description.jpg") no-repeat;
     background-size: cover;
 }
