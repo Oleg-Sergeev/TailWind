@@ -31,8 +31,8 @@ body {
 
 .nav-topbar-ul {
     list-style-type: none;
-
     display: flex;
+    flex-wrap: wrap;
     gap: 100px;
 }
 
@@ -195,4 +195,62 @@ body {
     font-weight: 400;
     text-align: center;
     margin-bottom: 20px;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 100px;
+    text-align: center;
+    padding: 50px;
+    height: 800px;
+    background: url("/images/bg_footer_description.jpg") no-repeat;
+    background-size: cover;
+}
+
+.footer-description > p {
+    color: white;
+    font-size: 36px;
+}
+
+.footer-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    background: #00B2FB;
+}
+
+.footer-info-partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+
+.footer-title {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+}
+
+.footer-info-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer-info-contacts > p {
+    color: white;
+    font-size: 28px;
+    font-weight: 200;
 }
