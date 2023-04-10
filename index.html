@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Попутный ветер</title>
   <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" type="text/css" href="styles/modal.css" />
   <link rel="stylesheet" type="text/css" href="styles/slider.css" />
   <link rel="stylesheet" type="text/css" href="styles/reseter.css" />
 
@@ -15,7 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
-  <script defer src="slider.js"></script>
+  <script defer src="scripts/slider.js"></script>
+  <script defer src="scripts/modal.js"></script>
 </head>
 
 <body>
@@ -24,10 +27,10 @@
       <nav class="nav-topbar">
         <div class="nav-topbar-logo">
           <a href="#">
-            <img src="images/logo.png" width="128" height="128" alt="лого"/>
+            <img src="images/logo.png" width="128" height="128" alt="лого" />
           </a>
         </div>
-  
+
         <div class="nav-topbar-buttons">
           <ul class="nav-topbar-ul">
             <li>
@@ -45,22 +48,22 @@
           </ul>
         </div>
       </nav>
-  
+
       <div class="header-content-container">
         <p class="header-content-subtitle">ПРОЕКТ</p>
         <h1 class="title">ПОПУТНЫЙ ВЕТЕР</h1>
         <p class="header-content-description">
-          Мы верим, что наши портативные ветряные турбины являются лучшим выбором для тех, 
-          кто хочет быть экологически ответственным и независимым от традиционных источников энергии. 
+          Мы верим, что наши портативные ветряные турбины являются лучшим выбором для тех,
+          кто хочет быть экологически ответственным и независимым от традиционных источников энергии.
           Будьте частью нашей миссии и присоединяйтесь к нам сегодня!
         </p>
-  
-        <button type="button" class="btn-book">ЗАКАЗАТЬ</button>
+
+        <button class="btn-book modal-show" type="button">ЗАКАЗАТЬ</button>
       </div>
     </div>
   </header>
 
-  <div class="content-container">
+  <div id="products" class="content-container">
     <div class="content-block">
       <h2 class="subtitle">Портативный ветряк</h2>
       <h3 class="article">Характеристики</h3>
@@ -69,18 +72,18 @@
         <div class="content">
           <h4 class="content-blades-type">СО СКЛАДНЫМИ ЛОПАСТЯМИ</h4>
 
-          <img class="content-photo" src="images/foldingBlades.jpg" alt="Складные лопасти"/>
-          
+          <img class="content-photo" src="images/foldingBlades.jpg" alt="Складные лопасти" />
+
           <div class="content-param-container">
             <p class="content-param-name">Скорость:</p>
             <p class="content-param-value">15м/с</p>
           </div>
-          
+
           <div class="content-param-container">
             <p class="content-param-name">Прочность</p>
             <p class="content-param-value">Средняя</p>
           </div>
-          
+
           <div class="content-param-container">
             <p class="content-param-name">Генерируемая мощность</p>
             <p class="content-param-value">3-10Вт</p>
@@ -92,18 +95,18 @@
         <div class="content">
           <h4 class="content-blades-type">С НЕСКЛАДНЫМИ ЛОПАСТЯМИ</h4>
 
-          <img class="content-photo" src="images/notFoldingBlades.jpg" alt="Складные лопасти"/>
-          
+          <img class="content-photo" src="images/notFoldingBlades.jpg" alt="Складные лопасти" />
+
           <div class="content-param-container">
             <p class="content-param-name">Скорость:</p>
             <p class="content-param-value">18м/с</p>
           </div>
-          
+
           <div class="content-param-container">
             <p class="content-param-name">Прочность</p>
             <p class="content-param-value">Наивысшая</p>
           </div>
-          
+
           <div class="content-param-container">
             <p class="content-param-name">Генерируемая мощность</p>
             <p class="content-param-value">5-15Вт</p>
@@ -123,11 +126,11 @@
             <h4 class="content-blades-type">ДЛЯ СБОРКИ</h4>
 
             <p class="content-description">
-              Набор с расходными материалами,  полной инструкцией и предоставляемой электроникой
+              Набор с расходными материалами, полной инструкцией и предоставляемой электроникой
             </p>
           </div>
 
-          <img class="content-photo" src="images/forAssemle.jpg" alt="Складные лопасти"/>
+          <img class="content-photo" src="images/forAssemle.jpg" alt="Складные лопасти" />
         </div>
 
         <div style="width: 1px;"></div>
@@ -137,11 +140,11 @@
             <h4 class="content-blades-type">ДЛЯ ПЕЧАТИ</h4>
 
             <p class="content-description">
-              Набор с готовыми комплектующими,  полной инструкцией и предоставляемой электроникой
+              Набор с готовыми комплектующими, полной инструкцией и предоставляемой электроникой
             </p>
           </div>
 
-          <img class="content-photo" src="images/forPrint.jpg" alt="Складные лопасти"/>
+          <img class="content-photo" src="images/forPrint.jpg" alt="Складные лопасти" />
         </div>
 
       </div>
@@ -151,11 +154,11 @@
 
     <div class="content-block" style="gap: 30px">
       <h2 class="subtitle">ДОПОЛНИТЕЛЬНАЯ КОМПЛЕКТАЦИЯ</h2>
-      
+
       <p class="content-description" style="max-width: 40%;">
         Дополнительная комплектация, которую можно добавить в комплект за дополнительную плату
       </p>
-      
+
       <h3 class="subarticle product-name">ШТАТИВ ДЛЯ ВЕТРЕНОЙ ТУРБИНЫ</h3>
 
       <div class="slider" data-pos="0">
@@ -181,51 +184,141 @@
       </div>
     </div>
   </div>
-  
-<footer>
-  <div class="footer-container">
-    <div class="footer-description">
-      <p>
-        Наша компания занимается производством портативных ветряных турбин, 
-        которые позволяют получать энергию из ветра в любом месте и в любое время.
-      </p>
-      
-      <p>
-        Наша цель - сделать возобновляемые источники энергии доступными для всех, 
-        независимо от места жительства, экономического положения или возможностей.
-      </p>
 
-      <p>
-        Наша команда состоит из профессионалов в области энергетики, 
-        инженерии и дизайна, которые работают с удовольствием и энтузиазмом, 
-        чтобы создавать лучшие продукты и удовлетворять потребности наших клиентов.
-      </p>
-    </div>
+  <footer>
+    <div class="footer-container">
+      <div id="about" class="footer-description">
+        <p>
+          Наша компания занимается производством портативных ветряных турбин,
+          которые позволяют получать энергию из ветра в любом месте и в любое время.
+        </p>
 
-    <div class="footer-info-container">
-      <div class="footer-info-partners">
-        <h3 class="footer-title">Партнеры</h3>
+        <p>
+          Наша цель - сделать возобновляемые источники энергии доступными для всех,
+          независимо от места жительства, экономического положения или возможностей.
+        </p>
 
-        <div style="height: 300px">
+        <p>
+          Наша команда состоит из профессионалов в области энергетики,
+          инженерии и дизайна, которые работают с удовольствием и энтузиазмом,
+          чтобы создавать лучшие продукты и удовлетворять потребности наших клиентов.
+        </p>
+      </div>
 
+      <div class="footer-info-container">
+        <div class="footer-info-partners">
+          <h3 id="partners" class="footer-title">Партнеры</h3>
+
+          <div style="height: 300px">
+
+          </div>
+        </div>
+
+        <div class="sep-h" style="border-color: white; width: 90%;"></div>
+
+        <div class="footer-info-contacts">
+          <h3 id="contacts" class="footer-title">Контакты</h3>
+
+          <p>Телефон: 8 (926)-341-22-31</p>
+
+          <p>E-mail: polywindturbine@mail.ru</p>
+
+          <p>Адрес: г.Москва, улица Большая Семёновская, дом 38</p>
+
+          <img src="images/altLogo.png" alt="лого" />
         </div>
       </div>
+    </div>
+  </footer>
 
-      <div class="sep-h" style="border-color: white; width: 90%;"></div>
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <form>
+        <button id="modal-hide" class="modal-hide" type="button">✕</button>
+        <h3 class="form-title">ЗАЯВКА</h3>
 
-      <div class="footer-info-contacts">
-        <h3 class="footer-title">Контакты</h3>
+        <div class="form-fields">
+          <div>
+            <p class="required">Имя</p>
+            <input name="name" type="text" placeholder="Иван" required/>
+          </div>
+          
+          <div>
+            <p class="required">Телефон</p>
+            <input name="phone" type="tel" placeholder="+79991234567" required/>
+          </div>
+          
+          <div>
+            <p class="required">Тип ветряка</p>
+            <select name="blades" required>
+              <option value="fold">Со складными лопастями</option>
+              <option value="unfold">С нескладными лопастями</option>
+            </select>
+          </div>
+          
+          <div>
+            <p class="required">Вид комплекта</p>
+            <select name="complect" required>
+              <option value="assemble">Для сборки</option>
+              <option value="print">Для печати</option>
+            </select>
+          </div>
+        </div>
 
-        <p>Телефон: 8 (926)-341-22-31</p>
+        <h3>ДОПОЛНИТЕЛЬНО</h3>
 
-        <p>E-mail: polywindturbine@mail.ru</p>
+        <div class="form-fields">
+          <div>
+            <p>Аккумулятор</p>
+            <select name="battery">
+              <option value="3000">3 000 мА*ч</option>
+              <option value="6000">6 000 мА*ч</option>
+              <option value="9000">9 000 мА*ч</option>
+            </select>
+          </div>
+          
+          <div>
+            <p>Цвет пластика</p>
+            <select name="plasticColor">
+              <option value="black">Черный</option>
+              <option value="white">Белый</option>
+            </select>
+          </div>
+          
+          <div>
+            <p>Штатив для установки</p>
+            <select name="stand">
+              <option value="standart">Стандартный</option>
+              <option value="tripod">Тренога</option>
+            </select>
+          </div>
+          
+          <div>
+            <p>Кабель</p>
+            <select name="cabel">
+              <option value="usb3">USB кабель 3м</option>
+              <option value="usb5">USB кабель 5м</option>
+              <option value="usb10">USB кабель 10м</option>
+            </select>
+          </div>
+        </div>
 
-        <p>Адрес: г.Москва, улица Большая Семёновская, дом 38</p>
-
-        <img src="images/altLogo.png" alt="лого"/>
-      </div>
+        <div style="text-align: center;">
+          <button id="modal-submit" class="btn-book modal-submit" type="submit">ЗАКАЗАТЬ</button>
+        </div>
+      </form>
     </div>
   </div>
-</footer>
+  
+  <div class="modal" id="modal-order">
+    <div class="modal-content">
+      <button id="modal-order-hide" class="modal-hide" type="button">✕</button>
+      <h3 class="form-title">Ваш заказ принят</h3>
+      <p class="modal-order-text">В ближайшее время с вами свяжется наш менеджер</p>
+    </div>
+  </div>
+
+
 </body>
+
 </html>
