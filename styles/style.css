@@ -4,7 +4,7 @@ body {
 
 .header-container {
     height: 960px;
-    background: url("/images/header_bg.jpg") no-repeat;
+    background: url("../images/header_bg.jpg") no-repeat;
     background-size: cover;
     padding: 0 64px;
 
@@ -212,7 +212,7 @@ body {
     text-align: center;
     padding: 50px;
     height: 800px;
-    background: url("/images/bg_footer_description.jpg") no-repeat;
+    background: url("../images/bg_footer_description.jpg") no-repeat;
     background-size: cover;
 }
 
