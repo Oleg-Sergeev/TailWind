@@ -17,8 +17,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 
+  <script src="https://unpkg.com/@supabase/supabase-js"></script>
   <script defer src="scripts/slider.js"></script>
-  <script defer src="scripts/modal.js"></script>
+  <script defer async src="scripts/modal.js"></script>
 </head>
 
 <body>
@@ -159,14 +160,26 @@
         Дополнительная комплектация, которую можно добавить в комплект за дополнительную плату
       </p>
 
-      <h3 class="subarticle product-name">ШТАТИВ ДЛЯ ВЕТРЕНОЙ ТУРБИНЫ</h3>
+      <h3 id="product-name" class="subarticle product-name">РУКОЯТКА</h3>
 
       <div class="slider" data-pos="0">
         <div class="slider__slides">
-          <div class="slider__slide"></div>
-          <div class="slider__slide"></div>
-          <div class="slider__slide"></div>
-          <div class="slider__slide"></div>
+          <div class="slider__slide">
+            <img src="images/Handle.png" style="height: 100%; width: 100%;
+            "/>
+          </div>
+          <div class="slider__slide">
+            <img src="images/Powerbank.jpg" style="height: 100%; width: 100%;
+            padding: 0 10%;"/>
+          </div>
+          <div class="slider__slide">
+            <img src="images/Usb.jpg" style="height: 100%; width: 100%;
+            padding: 0 20%;"/>
+          </div>
+          <div class="slider__slide">
+            <img src="images/Tripod.jpg" style="height: 100%; width: 100%;
+            padding: 0 20%;"/>
+          </div>
         </div>
 
         <div class="slider__arrows">

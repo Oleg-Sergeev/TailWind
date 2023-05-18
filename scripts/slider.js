@@ -7,6 +7,15 @@ let indicatorElem = sliderElem.querySelector('.slider__indicator');
 let autoplayInterval = setInterval(autoPlay, 7000);
 let autoplayEnabled = true;
 
+let productName = document.getElementById('product-name');
+
+let productNames = [
+	'РУКОЯТКА',
+	'ПОВЕРБАНК',
+	'USB-КАБЕЛЬ',
+	'ШТАТИВ ДЛЯ ВЕТРЕНОЙ ТУРБИНЫ'
+];
+
 dotElems.forEach(dotElem => {
 
 	dotElem.addEventListener('click', _ => {
@@ -44,6 +53,8 @@ function moveTo(newPos) {
 	indicatorElem.classList.remove(`slider__indicator--${currentDirection}`);
 	indicatorElem.classList.add(`slider__indicator--${newDirection}`);
 	sliderElem.setAttribute('data-pos', newPos);
+
+	productName.innerText = productNames[newPos];
 }
 
 function autoPlay() {

@@ -49,12 +49,12 @@
 	margin: 0 0.5em;
 	width: 1em;
 	height: 1em;
-	background: rgba(255, 255, 255, 0.5);
+	background: rgba(63, 63, 63, 0.5);
 	border-radius: 100px;
   }
   .slider__indicator {
 	position: absolute;
-	background: white;
+	background: rgb(66, 66, 66);
 	width: auto;
   }
   .slider__indicator--left {
@@ -88,21 +88,12 @@
 	background: #333;
   }
   
-  .slider__slide:nth-child(1) {
-	background: #309954;
-  }
-  .slider__slide:nth-child(2) {
-	background: #ffbd3c;
-  }
-  .slider__slide:nth-child(3) {
-	background: #f8593e;
-  }
-  .slider__slide:nth-child(4) {
-	background: #4086fa;
+  .slider__slide {
+	background: white;
   }
 
   .slider__arrow {
-	color: white;
+	color: black;
     background-color: transparent;
 	border: none;
 	padding: 10px 20px;
